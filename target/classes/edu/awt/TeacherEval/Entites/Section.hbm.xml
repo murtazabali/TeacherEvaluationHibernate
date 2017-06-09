@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 2, 2017 6:08:02 PM by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="teachereval" dynamic-insert="false" dynamic-update="false" mutable="true" name="edu.awt.TeacherEval.Entites.Section" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="section">
+        <id name="sid" type="int">
+            <column name="SId"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="section" optimistic-lock="true" type="string" unique="false">
+            <column length="1" name="Section"/>
+        </property>
+    </class>
+</hibernate-mapping>

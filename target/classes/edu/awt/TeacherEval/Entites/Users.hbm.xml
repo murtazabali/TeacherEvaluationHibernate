@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 2, 2017 6:08:02 PM by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="teachereval" dynamic-insert="false" dynamic-update="false" mutable="true" name="edu.awt.TeacherEval.Entites.Users" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="users">
+        <id name="regNo" type="int">
+            <column name="RegNo"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="password" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="Password" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="type" optimistic-lock="true" type="binary" unique="false">
+            <column name="Type" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="sid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="SId"/>
+        </property>
+    </class>
+</hibernate-mapping>

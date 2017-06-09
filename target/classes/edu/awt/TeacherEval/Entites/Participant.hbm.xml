@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 2, 2017 6:08:02 PM by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="teachereval" dynamic-insert="false" dynamic-update="false" mutable="true" name="edu.awt.TeacherEval.Entites.Participant" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="participant">
+        <id name="pid" type="int">
+            <column name="PId"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="date" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="Date"/>
+        </property>
+    </class>
+</hibernate-mapping>
